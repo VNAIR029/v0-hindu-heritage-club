@@ -1,0 +1,23 @@
+# Project Instructions for Bolt
+
+## Project Purpose
+This repository is for the Hindu Heritage Club website.  
+Its purpose is to showcase upcoming events, resources, and information about the club in a clean and engaging way.
+
+## Goals for Bolt
+- Help me make the website fast, responsive, and modern-looking.
+- Suggest UI/UX improvements (accessibility, readability, navigation).
+- Recommend ways to keep the code organized as the site grows.
+- Identify bugs or unused files.
+- Suggest best practices for HTML, CSS, and JavaScript.
+
+## Code Standards
+- Mobile-first design.
+- Consistent CSS styling (preferably utility-first or BEM naming).
+- Accessibility-friendly (semantic HTML, alt text, ARIA labels if needed).
+- Clean, well-commented code.
+
+## Preferred Output Style
+- Show me what’s wrong and how to fix it.
+- Provide small, actionable steps rather than overwhelming changes.
+- Use code snippets when recommending improvements.
