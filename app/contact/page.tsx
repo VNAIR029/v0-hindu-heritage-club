@@ -143,25 +143,26 @@ export default function ContactPage() {
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <form className="space-y-6">
+                    <form action="mailto:vnair1@ocdsb.ca,abaks6@ocdsb.ca,vihaannair9@gmail.com" method="post" enctype="text/plain" className="space-y-6">
                       <div className="grid grid-cols-2 gap-4">
                         <div className="space-y-2">
                           <Label htmlFor="firstName">First Name *</Label>
-                          <Input id="firstName" placeholder="Your first name" required />
+                          <Input id="firstName" name="firstName" placeholder="Your first name" required />
                         </div>
                         <div className="space-y-2">
                           <Label htmlFor="lastName">Last Name *</Label>
-                          <Input id="lastName" placeholder="Your last name" required />
+                          <Input id="lastName" name="lastName" placeholder="Your last name" required />
                         </div>
                       </div>
 
                       <div className="space-y-2">
                         <Label htmlFor="email">Email *</Label>
-                        <Input id="email" type="email" placeholder="your.email@ocdsb.ca" required />
+                        <Input id="email" name="email" type="email" placeholder="your.email@ocdsb.ca" required />
                       </div>
 
                       <div className="space-y-2">
                         <Label htmlFor="grade">Grade</Label>
-                        <Select>
+                        <Select name="grade">
                           <SelectTrigger>
                             <SelectValue placeholder="Select your grade" />
                           </SelectTrigger>
@@ -177,7 +178,7 @@ export default function ContactPage() {
 
                       <div className="space-y-2">
                         <Label htmlFor="interest">I'm interested in:</Label>
-                        <Select>
+                        <Select name="interest">
                           <SelectTrigger>
                             <SelectValue placeholder="Select your primary interest" />
                           </SelectTrigger>
@@ -196,6 +197,7 @@ export default function ContactPage() {
                         <Label htmlFor="message">Message</Label>
                         <Textarea
                           id="message"
+                          name="message"
                           placeholder="Tell us about your interest in the club, any questions you have, or how you'd like to get involved..."
                           rows={4}
                         />

@@ -20,7 +20,8 @@ const stotrams = [
       "With the dust of my Guru's lotus feet, I cleanse the mirror of my mind, and then narrate the pure fame of Raghuvar, which bestows the four fruits of life.",
     audioSrc: "/abstract-soundscape.png",
     downloadUrl: "#",
-    pdfUrl: "#",
+    pdfUrl: "https://sanskritdocuments.org/doc_hanuman/hanumaanchaalisaa.html",
+    externalLink: "https://sanskritdocuments.org/doc_hanuman/hanumaanchaalisaa.html",
     tags: ["Devotional", "Hanuman", "Popular"],
     benefits: [
       "Removes obstacles and fears",
@@ -41,7 +42,8 @@ const stotrams = [
       "He is the Universe, He is Vishnu, He is the Vedic sound Vashat, He is the Lord of past, present and future...",
     audioSrc: "/abstract-soundscape.png",
     downloadUrl: "#",
-    pdfUrl: "#",
+    pdfUrl: "https://sanskritdocuments.org/doc_vishnu/vishnusahasranama.html",
+    externalLink: "https://sanskritdocuments.org/doc_vishnu/vishnusahasranama.html",
     tags: ["Advanced", "Vishnu", "Vedic"],
     benefits: [
       "Purifies the mind and heart",
@@ -62,7 +64,8 @@ const stotrams = [
       "I bow to Shiva, who is white like camphor, the embodiment of compassion, the essence of the world, who wears the king of serpents as a garland...",
     audioSrc: "/abstract-soundscape.png",
     downloadUrl: "#",
-    pdfUrl: "#",
+    pdfUrl: "https://sanskritdocuments.org/doc_shiva/shivaashhTakam.html",
+    externalLink: "https://sanskritdocuments.org/doc_shiva/shivaashhTakam.html",
     tags: ["Intermediate", "Shiva", "Meditation"],
     benefits: [
       "Calms the mind and reduces stress",
@@ -173,9 +176,9 @@ export default function StotramsPage() {
                           <h4 className="text-lg font-semibold mb-3">Downloads</h4>
                           <div className="space-y-3">
                             <Button variant="outline" className="w-full justify-start bg-transparent" asChild>
-                              <a href={stotram.pdfUrl} download>
+                              <a href={stotram.externalLink} target="_blank" rel="noopener noreferrer">
                                 <Download className="w-4 h-4 mr-2" />
-                                Download PDF (Sanskrit & Translation)
+                                View IAST Transliteration
                               </a>
                             </Button>
                             <Button variant="outline" className="w-full justify-start bg-transparent" asChild>
@@ -206,7 +209,7 @@ export default function StotramsPage() {
         {/* Call to Action */}
         <section className="py-16 bg-muted/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl mx-auto text-center space-y-6">
+            <div className="max-w-3xl mx-auto text-center space-y-8">
               <h2 className="text-3xl font-bold">Continue Your Journey</h2>
               <p className="text-muted-foreground">
                 Explore our other resources to deepen your understanding and practice.
@@ -217,6 +220,25 @@ export default function StotramsPage() {
                 </Button>
                 <Button asChild variant="outline" size="lg" className="bg-transparent">
                   <Link href="/study">Study Corner</Link>
+                </Button>
+              </div>
+              
+              {/* Stotram Database Link */}
+              <div className="border-t pt-8 mt-8">
+                <h3 className="text-xl font-semibold mb-4">Complete Stotram Database</h3>
+                <p className="text-muted-foreground mb-4">
+                  Access a comprehensive collection of Sanskrit stotrams with IAST transliterations and translations.
+                </p>
+                <Button asChild variant="outline" size="lg" className="bg-transparent">
+                  <a 
+                    href="https://sanskritdocuments.org/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center"
+                  >
+                    <BookOpen className="w-5 h-5 mr-2" />
+                    Visit Sanskrit Documents Archive
+                  </a>
                 </Button>
               </div>
             </div>
